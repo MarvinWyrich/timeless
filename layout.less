@@ -1,0 +1,37 @@
+/* Layout of the page
+----------------------------------------- */
+@import 'timeless/colors';
+
+@header-height: 50px;
+@footer-height: 100px;
+
+html, body {
+	height: 100%;
+}
+
+body {
+	position: relative;
+	min-height: 100%;
+	height: auto !important;
+}
+
+#header {
+	width: 100%;
+	background-color: @secondary-color;
+	height: @header-height;
+}
+
+#content {
+	margin: 0 auto;
+	padding-bottom: @footer-height + 40px;
+	padding-left: 10px;
+	padding-right: 10px;
+	max-width: 960px;
+}
+
+#footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	border-top: 1px dashed @light-grey-border-color;
+}

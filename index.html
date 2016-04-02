@@ -1,0 +1,134 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Timeless - Less framework</title>
+    <link rel="stylesheet" href="all.css"/>
+</head>
+<body>
+<div id="header">
+    <!-- This is a possible place for adding your logo and the navigation.
+        Added the empty header for demonstration purposes. -->
+</div>
+<div id="content">
+    <h2 class="centered-text">Time<em>less</em> framework</h2>
+    <hr>
+    <p class="centered-text">You can get the source code and a compiled version from my <a href="https://github.com/MarvinWyrich/timeless">GitHub repository</a>.</p>
+    <hr>
+    <p><span class="framework-name">Timeless</span> is a minimal and easily adaptable Less framework which allows you to create
+        responsive websites without starting from scratch. The framework is independent from current webdesign
+        trends and the type of website you create, what makes it a kind of timeless. <span class="framework-name">Timeless</span> follows
+        the mobile-first approach and mainly provides:</p>
+    <ul>
+        <li>a typography system with vertical rhythm,</li>
+        <li>a fluid grid framework with relative widths,</li>
+        <li>a basic design for lists, forms and tables. You can remove the corresponding .less files to use your own styles.</li>
+    </ul>
+
+    <h3 id="download">Available under the MIT License</h3>
+    <p><span class="framework-name">Timeless</span> is available under the <a href="http://opensource.org/licenses/mit-license.php" target="_blank">MIT License</a>.
+        In summary, this means: you are allowed to use and modify the software, but you have to keep the copyright notice
+        and permission notice in your software. It would be a great pleasure if you would also contact me after using
+        the framework so I can see it in action.</p>
+
+    <h2>Playground</h2>
+
+    <h3 id="demo-grid-framework">Fluid & responsive grid framework</h3>
+    <div class="row demo-row">
+        <div class="col">Make sure that your cols add up to 1.</div>
+    </div>
+    <div class="row demo-row">
+        <div class="col span-1-2">1/2</div>
+        <div class="col span-1-2">1/2</div>
+    </div>
+    <div class="row demo-row">
+        <div class="col span-1-3">1/3</div>
+        <div class="col span-1-3">1/3</div>
+        <div class="col span-1-3">1/3</div>
+    </div>
+    <div class="row demo-row">
+        <div class="col span-1-4">1/4</div>
+        <div class="col span-1-4">1/4</div>
+        <div class="col span-1-4">1/4</div>
+        <div class="col span-1-4">1/4</div>
+    </div>
+    <div class="row demo-row">
+        <div class="col span-1-2">1/2</div>
+        <div class="col span-1-4">1/4</div>
+        <div class="col span-1-4">1/4</div>
+    </div>
+    <div class="row demo-row">
+        <div class="col span-1-2">Also nested rows are allowed.</div>
+        <div class="col span-1-2">
+            <div class="row">
+                <div class="col span-1-3">
+                    1/3
+                </div>
+                <div class="col span-2-3">
+                    2/3
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <h3 id="tables">Timeless design for tables...</h3>
+    <table class="full-width">
+        <tr>
+            <th>Headline 1</th>
+            <th>Headline 2</th>
+            <th>Headline 3</th>
+        </tr>
+        <tr>
+            <td>Cell 1a</td>
+            <td>Cell 1b</td>
+            <td>Cell 1c</td>
+        </tr>
+        <tr>
+            <td>Cell 2a</td>
+            <td>Cell 2b</td>
+            <td>Cell 2c</td>
+        </tr>
+    </table>
+
+    <h3 id="forms">... and forms</h3>
+    <form action="#" method="post">
+	<div class="row">
+		<div class="col">
+        		<label for="f1">Input field</label>
+        		<input type="text" id="f1" name="input_field">
+		</div>
+	</div>
+	<div class="row">
+		<div class="col">
+        		<label for="f2">Another input field</label>
+        		<input type="text" id="f2" name="another_input_field">
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col">
+        		<label for="f3">Textarea</label>
+        		<textarea id="f3"></textarea>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col">
+        		<label for="cb"><input type="checkbox" id="cb" checked="checked"><span class="checkbox-label">I agree that this framework is timeless.</span>
+        		</label>
+		</div>
+	</div>
+        <div class="button-row">
+            <input type="submit" class="primary-button" value="Submit">
+            <button class="secondary-button">Cancel</button>
+        </div>
+    </form>
+</div>
+<div id="footer">
+    <p class="centered-text smaller-text">
+        Copyright &copy; 2016 <a href="http://www.marvin-wyrich.de">Marvin Wyrich</a>
+    </p>
+</div>
+</body>
+</html>
